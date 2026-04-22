@@ -15,22 +15,20 @@ VALUES
 (3,'Night Pulse','Horror',2018,6.8,95),
 (4,'Skyline Code','Action',2021,7.4,109);
 
---1
+--1+2
 SELECT 
 title AS movie_name,
 genre AS type,
-year AS release_date
-FROM movie;
-
---2
-SELECT
+year AS release_year
 rating * 10 AS rating_bucket
 FROM movie;
 
 --3
 SELECT
 rating AS rating_bucket,
-title AS movie_name
+title AS movie_name,
+genre AS type,
+year AS release_year
 FROM movie
 ORDER BY rating_bucket DESC, movie_name ASC;
 

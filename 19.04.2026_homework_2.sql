@@ -33,3 +33,7 @@ ORDER BY year DESC;
 SELECT DISTINCT genre, language
 FROM homework_2
 ORDER BY language ASC;
+
+--bonus
+SELECT COUNT(DISTINCT genre) AS genre_count
+FROM homework_2;
